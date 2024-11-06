@@ -1,0 +1,27 @@
+// script.js
+
+function mostrarMiembros() {
+    const contenido = document.getElementById('contenido');
+    contenido.innerHTML = '<h2>Lista de Miembros</h2><p>Aquí se mostrará la lista de miembros...</p>';
+    // Aquí puedes agregar la lógica para obtener y mostrar la lista de miembros.
+}
+
+function verDetallesMiembro() {
+    const contenido = document.getElementById('contenido');
+    contenido.innerHTML = '<h2>Detalles de Miembro</h2><p>Aquí se mostrarán los detalles de un miembro seleccionado...</p>';
+    // Lógica para obtener y mostrar los detalles de un miembro específico.
+}
+
+function formularioAgregarMiembro() {
+    const contenido = document.getElementById('contenido');
+    contenido.innerHTML = `
+        <h2>Agregar Nuevo Miembro</h2>
+        <form id="formAgregarMiembro">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <button type="submit">Agregar</button>
+        </form>
+    `;
+}
